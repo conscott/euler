@@ -5,6 +5,8 @@
 primes = [2]
 def is_prime(n):
     for p in primes:
+        if p**2 > n:
+            break
         if n % p == 0:
             return False
     primes.append(n)
