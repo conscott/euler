@@ -5,11 +5,12 @@
 # in value, and containing two digits in the numerator and denominator.
 # If the product of these four fractions is given in its lowest common terms, find
 # the value of the denominator.
-import math
+
 
 # 98 -> ['9', '8']
 def num_to_str_array(num):
     return [i for i in str(num)]
+
 
 def digit_cancel(num, denom):
     sarray_num = num_to_str_array(num)
@@ -25,6 +26,7 @@ def digit_cancel(num, denom):
         return True
     return False
 
+
 def reduce_fraction(num, denom):
     # Reduce the fraction
     reducer = 2
@@ -37,6 +39,6 @@ def reduce_fraction(num, denom):
 
 # Get the numerator / denominator of all franctions that can be cancelled by digits
 num, denom = reduce(lambda x, y: (x[0] * y[0], x[1] * y[1]),
-                    [(i, j) for i in range(10, 100) for j in range(i, 100) if i !=j and digit_cancel(i, j)])
+                    [(i, j) for i in range(10, 100) for j in range(i, 100) if i != j and digit_cancel(i, j)])
 
 print reduce_fraction(num, denom)[1]
