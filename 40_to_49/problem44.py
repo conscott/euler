@@ -11,8 +11,9 @@ Find the pair of pentagonal numbers, Pj and Pk, for which their sum and differen
 are pentagonal and D = |Pk - Pj| is minimised; what is the value of D?
 """
 
-
+# Generate pentagonal numbers
 pent = [(n*(3*n-1))/2 for n in range(1, 10000)]
+# Make a set for faster inclusion test
 pset = set(pent)
 
 print min([pent[i+diff]-pent[i]
