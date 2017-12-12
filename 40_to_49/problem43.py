@@ -24,4 +24,4 @@ def check_property(pan):
 def join_perm(perm):
     return ''.join([str(n) for n in perm])
 
-print sum([int(join_perm(i)) for i in permutations(range(10)) if check_property(join_perm(i))])
+print(sum([int(join_perm(i)) for i in permutations(list(range(10))) if check_property(join_perm(i))]))

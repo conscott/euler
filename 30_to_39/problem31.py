@@ -13,4 +13,4 @@ def comb_to_sum(target, coin_now=0, total=0):
             valid_combos += comb_to_sum(target, coin, total + coin, valid_combos)
     return valid_combos
 
-print comb_to_sum(200)
+print(comb_to_sum(200))

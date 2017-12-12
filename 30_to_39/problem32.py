@@ -26,7 +26,7 @@ def check_perm(perm):
 
 # All permutations of 1-9 are pandigital, just need to check
 # if they are valid in form a * b = c
-for i in permutations(range(1,10), 9):
+for i in permutations(list(range(1,10)), 9):
     check_perm(i)
 
-print sum(products)
+print(sum(products))

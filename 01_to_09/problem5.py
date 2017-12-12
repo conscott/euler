@@ -1,3 +1,4 @@
+from functools import reduce
 # 2520 is the smallest number that can be divided by each of the
 # numbers from 1 to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible
@@ -20,8 +21,8 @@ def factor(n):
 # of max occurance of each factor
 for i in range(2, 21):
     factors = factor(i)
-    for f in factors.items():
+    for f in list(factors.items()):
         if f[0] not in max_factor or max_factor[f[0]] < f[1]:
             max_factor[f[0]] = f[1]
 
-print reduce(lambda x, y: x*y, [f[0] ** f[1] for f in max_factor.items()])
+print(reduce(lambda x, y: x*y, [f[0] ** f[1] for f in list(max_factor.items())]))

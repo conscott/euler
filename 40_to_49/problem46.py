@@ -45,5 +45,5 @@ def verify_condition(n):
 
 for n in count(33, 2):
     if not verify_condition(n):
-        print n
+        print(n)
         break

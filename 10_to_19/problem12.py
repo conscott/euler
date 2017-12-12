@@ -17,5 +17,5 @@ for i in count(2, 1):
     triangle += i
     factors = get_factors(triangle)
     if len(factors) > 500:
-        print "%s has %s factors" % (triangle, len(factors))
+        print("%s has %s factors" % (triangle, len(factors)))
         break

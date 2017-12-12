@@ -7,4 +7,4 @@ while len(str(fibs[0])) < 1000:
     fibs = fibs[0] + fibs[1], fibs[0]
     idx += 1
 
-print idx
+print(idx)

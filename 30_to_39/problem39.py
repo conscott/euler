@@ -26,4 +26,4 @@ def find_solutions(p):
     return len(soln)
 
 
-print reduce(lambda x, y: x if x[1] > y[1] else y, [(p, find_solutions(p)) for p in range(12, 1001)])[0]
+print(reduce(lambda x, y: x if x[1] > y[1] else y, [(p, find_solutions(p)) for p in range(12, 1001)])[0])

@@ -5,4 +5,4 @@ def factorial(n):
         return 1
     return n * factorial(n-1)
 
-print sum([int(i) for i in str(factorial(100))])
+print(sum([int(i) for i in str(factorial(100))]))

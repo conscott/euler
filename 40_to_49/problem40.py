@@ -1,3 +1,4 @@
+from functools import reduce
 # An irrational decimal fraction is created by concatenating the positive integers:
 # 0.123456789101112131415161718192021...
 #
@@ -11,4 +12,4 @@ while len(digit_array) < 1000000:
     digit_array.extend([int(i) for i in str(num)])
     num += 1
 
-print reduce(lambda x, y: x*y, [digit_array[10**i-1] for i in range(7)])
+print(reduce(lambda x, y: x*y, [digit_array[10**i-1] for i in range(7)]))

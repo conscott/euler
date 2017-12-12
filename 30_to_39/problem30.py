@@ -4,4 +4,4 @@
 def pow_digits(n, p):
     return sum([int(d)**p for d in str(n)])
 
-print sum([i for i in range(2, 9**5*6) if pow_digits(i, 5) == i])
+print(sum([i for i in range(2, 9**5*6) if pow_digits(i, 5) == i]))

@@ -24,4 +24,4 @@ for y in range(1901, 2001):
         if total_days % 7 == 6:
             total_sundays += 1
 
-print "Total Sundays on the first is %s" % total_sundays
+print("Total Sundays on the first is %s" % total_sundays)

@@ -28,4 +28,4 @@ def word_weight(word):
 r = requests.get("https://projecteuler.net/project/resources/p042_words.txt")
 words = [str(name.strip('"')) for name in r.text.split(',')]
 
-print sum([1 for word in words if word_weight(word) in triangle_nums])
+print(sum([1 for word in words if word_weight(word) in triangle_nums]))

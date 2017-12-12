@@ -35,4 +35,4 @@ for b in b_range:
             consec_max = consec
             consec_a_b = a, b
 
-print "Max at %s with product %s" % (consec_a_b, consec_a_b[0] * consec_a_b[1])
+print("Max at %s with product %s" % (consec_a_b, consec_a_b[0] * consec_a_b[1]))

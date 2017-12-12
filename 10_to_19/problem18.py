@@ -30,4 +30,4 @@ def sum_levels(l, i, s):
     sum_levels(l+1, i+1, s)
 
 sum_levels(0, 0, 0)
-print max(totals)
+print(max(totals))

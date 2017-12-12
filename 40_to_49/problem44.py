@@ -16,7 +16,7 @@ pent = [(n*(3*n-1))/2 for n in range(1, 10000)]
 # Make a set for faster inclusion test
 pset = set(pent)
 
-print min([pent[i+diff]-pent[i]
+print(min([pent[i+diff]-pent[i]
            for diff in range(1, len(pent))
            for i in range(len(pent)-diff)
-           if (pent[i] + pent[i+diff]) in pset and (pent[i+diff] - pent[i]) in pset])
+           if (pent[i] + pent[i+diff]) in pset and (pent[i+diff] - pent[i]) in pset]))

@@ -21,4 +21,4 @@ for i in range(2**19+1, 1000000, 2):
     if l > m[1]:
         m = (i, l)
 
-print "Max seq length is %s for %s" % (m[1], m[0])
+print("Max seq length is %s for %s" % (m[1], m[0]))

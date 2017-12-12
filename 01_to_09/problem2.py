@@ -11,4 +11,4 @@ while (fib_seq[-1] < 4000000):
     if fib_seq[-1] % 2 == 0:
         total = total + fib_seq[-1]
 
-print total
+print(total)

@@ -1,3 +1,4 @@
+from functools import reduce
 # The fraction 49/98 is a curious fraction, as an inexperienced mathematician in
 # attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is
 # correct, is obtained by cancelling the 9s.
@@ -41,4 +42,4 @@ def reduce_fraction(num, denom):
 num, denom = reduce(lambda x, y: (x[0] * y[0], x[1] * y[1]),
                     [(i, j) for i in range(10, 100) for j in range(i, 100) if i != j and digit_cancel(i, j)])
 
-print reduce_fraction(num, denom)[1]
+print(reduce_fraction(num, denom)[1])

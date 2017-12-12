@@ -17,4 +17,4 @@ while len(primes) < 10001:
     is_prime(i)
     i += 2
 
-print primes[-1]
+print(primes[-1])

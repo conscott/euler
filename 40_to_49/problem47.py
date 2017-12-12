@@ -53,5 +53,5 @@ for i in count(15, 1):
             break
         factorsets.append(pf)
     if success:
-        print i
+        print(i)
         break

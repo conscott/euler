@@ -21,4 +21,4 @@ for i in range(2, 10000):
     if i == s2 and i != s1 and s1 not in amicable:
         amicable[i] = s1
 
-print sum([i+k for i, k in amicable.items()])
+print(sum([i+k for i, k in list(amicable.items())]))

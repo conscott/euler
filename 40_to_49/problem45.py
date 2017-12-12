@@ -20,4 +20,4 @@ while True:
         break
     n += 1
 
-print list(set(tri).intersection(pent).intersection(hexa))[2]
+print(list(set(tri).intersection(pent).intersection(hexa))[2])

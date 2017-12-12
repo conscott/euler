@@ -21,4 +21,4 @@ for layer_increase in range(2, 1002, 2):
         corner += layer_increase
         total += corner
 
-print total
+print(total)

@@ -21,4 +21,4 @@ while i < int(math.sqrt(NUMBER)):
         NUMBER /= i
     i += 2
 
-print NUMBER
+print(NUMBER)

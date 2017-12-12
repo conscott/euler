@@ -1,3 +1,4 @@
+from functools import reduce
 # Find the thirteen adjacent digits in the 1000-digit number
 # that have the greatest product. What is the value of this product?
 
@@ -24,4 +25,4 @@ num = """
 71636269561882670428252483600823257530420752963450
 """.replace("\n", "")
 
-print max([reduce(lambda x, y: x*y, [int(i) for i in num[i:i+13]]) for i in range(len(num)-13)])
+print(max([reduce(lambda x, y: x*y, [int(i) for i in num[i:i+13]]) for i in range(len(num)-13)]))

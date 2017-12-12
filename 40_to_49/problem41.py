@@ -20,4 +20,4 @@ def join_perm(perm):
     return int(''.join([str(n) for n in perm]))
 
 # Generate pandigitals from 3-9 digits and prime largest one that is prime
-print max([join_perm(i) for j in range(3, 10) for i in permutations(range(1, j)) if add_prime(join_perm(i))])
+print(max([join_perm(i) for j in range(3, 10) for i in permutations(list(range(1, j))) if add_prime(join_perm(i))]))

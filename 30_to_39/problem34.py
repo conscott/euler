@@ -14,4 +14,4 @@ def fact_digits(num):
     return sum([fact_cache[int(i)] for i in str(num)])
 
 # Upper limit is 7 * 9!
-print sum([i for i in range(3, 1000000) if fact_digits(i) == i])
+print(sum([i for i in range(3, 1000000) if fact_digits(i) == i]))

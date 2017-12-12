@@ -32,4 +32,4 @@ for p in primes_to_check:
     perm_set = [r for r in primes_to_check if p < r < 10000 and is_perm(p, r)]
     for pdiff in perm_set:
         if pdiff + (pdiff - p) in perm_set:
-            print "%s%s%s" % (p, pdiff, pdiff + (pdiff - p))
+            print("%s%s%s" % (p, pdiff, pdiff + (pdiff - p)))

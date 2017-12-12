@@ -13,4 +13,4 @@ def palindrome(num):
     return False
 
 # Sum of all base10 and base2 palindromes under 1 million.
-print sum([n for n in range(1, 1000001) if palindrome(n)])
+print(sum([n for n in range(1, 1000001) if palindrome(n)]))

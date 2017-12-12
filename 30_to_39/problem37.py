@@ -41,4 +41,4 @@ for p in primes:
         if found >= 11:
             break
 
-print total
+print(total)

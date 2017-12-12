@@ -42,4 +42,4 @@ for i in range(len(primes)):
         if streak > max_cnt and total in prime_set:
             max_cnt, max_total = streak, total
 
-print max_total
+print(max_total)

@@ -48,4 +48,4 @@ def circular_prime(p):
             return False
     return True
 
-print sum([1 for p in primes if circular_prime(p)])
+print(sum([1 for p in primes if circular_prime(p)]))

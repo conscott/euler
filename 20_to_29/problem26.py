@@ -13,4 +13,4 @@ def len_cycle(n):
         divisor = r*10
     return len(remainders)
 
-print reduce(lambda x, y: x if x[1] > y[1] else y, [(i, len_cycle(i)) for i in range(1, 1000)])[0]
+print(reduce(lambda x, y: x if x[1] > y[1] else y, [(i, len_cycle(i)) for i in range(1, 1000)])[0])

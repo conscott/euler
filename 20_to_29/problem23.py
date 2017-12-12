@@ -29,4 +29,4 @@ for abundant_pair in combinations_with_replacement(abundant_numbers, 2):
     except:
         pass
 
-print sum(possible_integers)
+print(sum(possible_integers))

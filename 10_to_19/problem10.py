@@ -11,7 +11,7 @@ def check_prime(n):
     primes.append(n)
     return True
 
-for i in xrange(3, 2000000, 2):
+for i in range(3, 2000000, 2):
     check_prime(i)
 
-print sum(primes)
+print(sum(primes))
