@@ -48,7 +48,8 @@ def gen_wildcard(p, repeat):
     strp = str(p)
     index = [i for i, j in enumerate(str(p)) if int(j) == repeat]
     start_range = 0 if 0 not in index else 1
-    return [int(''.join([str(replace) if i in index else s for i, s in enumerate(strp)])) for replace in range(start_range, 10)]
+    return [int(''.join([str(replace) if i in index else s for i, s in enumerate(strp)]))
+            for replace in range(start_range, 10)]
 
 for p in p_possible_small:
     family = [p for p in gen_wildcard(p, max_occur_map[p]) if p in p_possible]
